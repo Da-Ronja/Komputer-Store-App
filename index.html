@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Komputer Store App</title>
+</head>
+<body>
+    <header>
+        <h1>Komputer Store</h1>
+    </header>
+
+    <div class="flex-container">
+        <section>
+            <h2>Joe Banker</h2>
+            <div>
+                <p>Balance</p>
+                <p id="balance">100 kr</p>
+            </div>
+            <button id="get-loan-button" class="loan-button big-button">Get a loan</button>
+        </section>
+        <section>
+            <h2>Work</h2>
+            <p>Pay</p>
+            <p id="pay"></p>
+            <button id="bank-button" class="bank-button samll-button">Bank</button>
+            <button id="work-button" class="work-button samll-button">Work</button>
+            <!-- <button id="work" class="work">Repay Loan</button> /* could appaer by Css Display or by js */ -->
+        </section>
+        <section>
+          <label for="laptop-select">Laptops</label>
+          <select name="laptops" id="select-laptop"></select>
+
+          <h3>Feature</h3>
+          <ul id="laptop-feature"></ul>
+
+        </section>
+        <section class="display-laptop">
+            <div id="imageTest"></div>
+            <img id="laptop-image" src="#" alt="">
+            <h2 id="laptop-title">Laptop name</h2>
+            <p id="laptop-price"></p>
+            <p id="laptop-descripton">Laptop description</p>
+            <button id="buy" class="buy-button big-button">BUY NOW</button>
+        </section>
+    </div>
+
+    
+    <script src="app.js" type="module"></script>
+    <script src="test.js"></script>
+</body>
+</html>
