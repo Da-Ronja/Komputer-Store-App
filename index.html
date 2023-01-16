@@ -12,28 +12,31 @@
 <body>
     <header>
         <h1>Komputer Store</h1>
-        
+
     </header>
 
     <div class="flex-container">
         <section>
             <h2>Joe Banker</h2>
             <div>
-                <p>Balance</p>
-                <p id="balance"></p>
-                <p>Loan balance</p>
-                <p id="balance-loan"></p>
+                <div>
+                    <p>Balance</p>
+                    <p id="balance">0,00 kr</p>
+                </div>
+                <div id="balance-loan-container" class="hidden">
+                    <p>Loan balance</p>
+                    <p id="balance-loan">0,00 kr</p>
+                </div>
             </div>
             <button id="get-loan-button" class="loan-button big-button">Get a loan</button>
         </section>
         <section>
             <h2>Work</h2>
             <p>Pay</p>
-            <p id="pay"></p>
+            <p id="pay">0,00 kr</p>
             <button id="bank-button" class="bank-button samll-button">Bank</button>
             <button id="work-button" class="work-button samll-button">Work</button>
-            <button id="repay-loan-button" class="repay-loan-button big-button">Repay loan</button>
-            <!-- <button id="work" class="work">Repay Loan</button> /* could appaer by Css Display or by js */ -->
+            <button id="repay-loan-button" class="repay-loan-button big-button hidden">Repay loan</button>
         </section>
         <section>
             <label for="laptop-select">Laptops</label>
@@ -49,7 +52,7 @@
             <h2 id="laptop-title">Laptop name</h2>
             <p id="laptop-price"></p>
             <p id="laptop-descripton">Laptop description</p>
-            <button id="buy" class="buy-button big-button">BUY NOW</button>
+            <button id="buy-button" class="buy-button big-button">BUY NOW</button>
         </section>
     </div>
 
