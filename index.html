@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Komputer Store App</title>
 </head>
+
 <body>
     <header>
         <h1>Komputer Store</h1>
@@ -17,7 +19,9 @@
             <h2>Joe Banker</h2>
             <div>
                 <p>Balance</p>
-                <p id="balance">100 kr</p>
+                <p id="balance"></p>
+                <p>Loan balance</p>
+                <p id="balance-loan"></p>
             </div>
             <button id="get-loan-button" class="loan-button big-button">Get a loan</button>
         </section>
@@ -27,14 +31,15 @@
             <p id="pay"></p>
             <button id="bank-button" class="bank-button samll-button">Bank</button>
             <button id="work-button" class="work-button samll-button">Work</button>
+            <button id="repay-loan-button" class="repay-loan-button big-button">Repay loan</button>
             <!-- <button id="work" class="work">Repay Loan</button> /* could appaer by Css Display or by js */ -->
         </section>
         <section>
-          <label for="laptop-select">Laptops</label>
-          <select name="laptops" id="select-laptop"></select>
+            <label for="laptop-select">Laptops</label>
+            <select name="laptops" id="select-laptop"></select>
 
-          <h3>Feature</h3>
-          <ul id="laptop-feature"></ul>
+            <h3>Feature</h3>
+            <ul id="laptop-feature"></ul>
 
         </section>
         <section class="display-laptop">
@@ -47,8 +52,9 @@
         </section>
     </div>
 
-    
+
     <script src="app.js" type="module"></script>
     <script src="test.js"></script>
 </body>
+
 </html>
