@@ -1,15 +1,16 @@
 const laptopSelect = document.getElementById("select-laptop");
 
 const computersAPI = "computers";
+const baseURL = "https://hickory-quilled-actress.glitch.me/";
 
 async function fehctLaptopData(id) {
     try {
-        const respons = await fetch(`https://hickory-quilled-actress.glitch.me/${id}`);
-        const data = await respons.json();
+        const response = await fetch(`${baseURL}${id}`);
+        const data = await response.json();
 
         return data
     } catch (error) {
-        console.log(error);
+        console.log(error)
     }
 }
 
@@ -34,7 +35,7 @@ const displayLaptop = (laptop) => {
     const laptopTitle = document.getElementById("laptop-title");
     const laptopDescription = document.getElementById("laptop-descripton");
     const laptopPrice = document.getElementById("laptop-price");
-    const laptopImage = document.getElementById("imageTest");
+    const laptopImage = document.getElementById("laptop-image");
 
     laptopTitle.innerHTML = laptop.title;
     laptopPrice.innerHTML = currencyFormatter.format(laptop.price);
@@ -42,7 +43,9 @@ const displayLaptop = (laptop) => {
 
     displayLaptopFeatures(laptop.specs);
 
-    // console.log("This Is Image does not work bebous of await", fehctLaptopData(laptop.image));
+    // TODO - ask if this is correct
+    laptopImage.src = `${baseURL}${laptop.image}`;
+    console.log(laptopImage.src)
 }
 
 const displayLaptopFeatures = (specs) => {
