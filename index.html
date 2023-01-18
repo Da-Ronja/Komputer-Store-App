@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Komputer Store App</title>
 </head>
@@ -12,69 +17,97 @@
 <body>
     <header>
         <h1>Komputer Store</h1>
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 70ae2a67dbb82ae6238d9878c872480db01a6983
     </header>
 
-    <div class="flex-container">
-        <section>
-            <h2>Joe Banker</h2>
-            <div>
-<<<<<<< HEAD
-                <div>
-                    <p>Balance</p>
-                    <p id="balance">0,00 kr</p>
+
+    <main>
+        <div class="d-flex flex-column" style="max-width: 800px;">
+            <section class=" px-2">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" style="max-width: 300px;">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Joe Banker</h5>
+                                <div>
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <p>Balance</p>
+                                        <p id="balance">0,00 kr</p>
+                                    </div>
+                                    <div id="balance-loan-container d-flex flex-row justify-content-between"
+                                        class="hidden">
+                                        <p>Loan balance</p>
+                                        <p id="balance-loan">0,00 kr</p>
+                                    </div>
+                                </div>
+                                <div class="d-grid w-100 mt-auto">
+                                    <button id="get-loan-button" class="btn btn-primary">Get a loan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="max-width: 300px;">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Work</h5>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <p>Pay</p>
+                                    <p id="pay">0,00 kr</p>
+                                </div>
+                                <div class="d-grid gap-2 mt-auto">
+                                    <div class="d-grid gap-2 d-flex">
+                                        <div class="d-grid w-50">
+                                            <button id="bank-button" class="btn btn-primary">Bank</button>
+                                        </div>
+                                        <div class="d-grid w-50">
+                                            <button id="work-button" class="btn btn-primary">Work</button>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid w-100">
+                                        <button id="repay-loan-button" class="btn btn-primary hidden">Repay
+                                            loan</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="max-width: 300px;">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 for="laptop-select" class="card-title">Laptops</h5>
+                                <select name="laptops" id="select-laptop"></select>
+
+                                <h6 class="card-subtitle mb-2">Feature</h6>
+                                <ul id="laptop-feature"></ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="balance-loan-container" class="hidden">
-                    <p>Loan balance</p>
-                    <p id="balance-loan">0,00 kr</p>
+            </section>
+            <section class="display-laptop px-2">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img id="laptop-image" src="#" class="img-fluid rounded-start" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 id="laptop-title" class="card-title">Laptop name</h5>
+                                <p id="laptop-descripton" class="card-text">Laptop description</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6 id="laptop-price"></h6>
+                            <div class="d-grid w-100">
+                                <button id="buy-button" class="btn btn-primary">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-=======
-                <p>Balance</p>
-                <p id="balance"></p>
-                <p>Loan balance</p>
-                <p id="balance-loan"></p>
->>>>>>> 70ae2a67dbb82ae6238d9878c872480db01a6983
-            </div>
-            <button id="get-loan-button" class="loan-button big-button">Get a loan</button>
-        </section>
-        <section>
-            <h2>Work</h2>
-            <p>Pay</p>
-            <p id="pay">0,00 kr</p>
-            <button id="bank-button" class="bank-button samll-button">Bank</button>
-            <button id="work-button" class="work-button samll-button">Work</button>
-<<<<<<< HEAD
-            <button id="repay-loan-button" class="repay-loan-button big-button hidden">Repay loan</button>
-=======
-            <button id="repay-loan-button" class="repay-loan-button big-button">Repay loan</button>
-            <!-- <button id="work" class="work">Repay Loan</button> /* could appaer by Css Display or by js */ -->
->>>>>>> 70ae2a67dbb82ae6238d9878c872480db01a6983
-        </section>
-        <section>
-            <label for="laptop-select">Laptops</label>
-            <select name="laptops" id="select-laptop"></select>
+            </section>
+        </div>
+    </main>
 
-            <h3>Feature</h3>
-            <ul id="laptop-feature"></ul>
-
-        </section>
-        <section class="display-laptop">
-            <div id="imageTest"></div>
-            <img id="laptop-image" src="#" alt="">
-            <h2 id="laptop-title">Laptop name</h2>
-            <p id="laptop-price"></p>
-            <p id="laptop-descripton">Laptop description</p>
-            <button id="buy-button" class="buy-button big-button">BUY NOW</button>
-        </section>
-    </div>
-
-
-    <script src="app.js" type="module"></script>
-    <script src="test.js"></script>
+    <script src="./static/js/app.js" type="module"></script>
 </body>
 
 </html>
