@@ -24,7 +24,11 @@ export class Laptop {
         laptopTitle.innerHTML = this.title;
         formatCurrency(laptopPrice, this.price)
         laptopDescription.innerHTML = this.description;
+
         laptopImage.src = `${baseURL}${this.image}`;
+        laptopImage.onerror = function() {
+            this.src = "../assets/No_Image.png";
+        }
 
         laptopFeatures.innerHTML = "";
         this.specs.forEach(item => {

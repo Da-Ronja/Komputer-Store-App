@@ -1,22 +1,86 @@
-header {
+ header {
     background-color: #212529;
     color: #f3f3f3;
-}
-
-ul {
-    list-style: none;
-} 
-
-li {
-    font-size: small;
-
-}
-.card-container {
-    border: 1px solid black;
-    padding: 20px;
-    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
   }
 
- .hidden {
-    display: none;
+  main {
+margin: 50px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    font-size: small;
+  }
+  .container {
+    max-width: 800px;
+    min-width: 300px;
+  }
+
+  .box {
+    background-color: rgb(224, 224, 231);
  }
+
+  
+  .card-container {
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .card {
+      min-height: 200px;
+  }
+  .get-loan-button,
+  .bank-button,
+  .work-button,
+  .repay-loan-button,
+  .buy-button {
+    font-size: 1em;
+  }
+  
+  .get-loan-button {
+    background-color: #7fffd4;
+    border: 1px solid #3e7d68;
+  }
+
+  .get-loan-button:hover {
+    background-color: #3e7d68;
+    color: white;
+  }
+  
+  .bank-button {
+    background-color: #dbdb04;
+    border: 1px solid #848401;
+  }
+
+  .bank-button:hover {
+    background-color: #848401;
+    color: white;
+  }
+  
+  .repay-loan-button {
+    background-color: #ffa500;
+    border: 1px solid #a86d01;
+  }
+
+  .repay-loan-button:hover {
+    background-color: #a86d01;
+    color: white;
+  }
+
+  .buy-button {
+    background-color: #00ffff;
+    border: 1px solid #01a0a0;
+  }
+
+  .buy-button:hover {
+    background-color: #01a0a0;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }

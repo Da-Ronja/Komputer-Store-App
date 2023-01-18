@@ -78,6 +78,14 @@ bankButton.addEventListener('click', () => {
         outStandingLoan -= salaryDeduction;
         formatCurrency(balanceLoanElement, outStandingLoan);
 
+        if (outStandingLoan < 0) {
+            // Hide repay loan button and loan balance element
+            toggleVisibility(repayLoanButton, false);
+            toggleVisibility(balanceLoanContainer, false);
+            // Set outstanding loan to 0
+            outStandingLoan = 0;
+        } 
+
         // Transfer remaining salary to bank balaance
         bankBalance += salary - salaryDeduction;
     } else {
